@@ -1,9 +1,8 @@
 import re
 
 # Enter the values of N and M, respectively
-N = int(input('Please enter the value of N: ').strip().split()[0])
-M = int(input('Please enter the value of M: ').strip().split()[0])
-
+DIM = input('Please enter the values of N and M: ').strip().split()
+N, M = int(DIM[0]), int(DIM[1])
 
 # Initialize the input matrix
 matrix = []
@@ -18,7 +17,6 @@ output = "".join([row[item] for item in range(M) for row in matrix])
 print('The decoded script is: {output}'.format(output = output))
 
 output = re.sub(r'\b[^a-zA-Z0-9]+\b', ' ', output)
-output = re.sub(r'[0-9]', '', output)
 output = re.sub('  ', ' ', output)
 
 print('The final decoded script is: {output}'.format(output = output))
