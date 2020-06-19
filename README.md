@@ -1,5 +1,9 @@
 # Task-2-of-the-AMP-Code-Question
-This is my answer of the task 2 in the AMP Code Question.
+This is my answer of the task 2 in the AMP Code Question. Please run this program by the following command:
+
+python task2.py
+
+## Sample 0
 
 Please enter the input as follows:
 
@@ -12,4 +16,7 @@ Please enter the input as follows:
 * #t%
 * ir!
 
-The final decoded script is: This is Matrix# %!
+The output is as follows:
+
+* The decoded script is: This$#is% Matrix#  %!
+* The final decoded script is: This is Matrix# %!
