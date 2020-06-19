@@ -18,5 +18,4 @@ Please enter the input as follows:
 
 The output is as follows:
 
-* The decoded script is: This$#is% Matrix#  %!
-* The final decoded script is: This is Matrix# %!
+* This is Matrix# %!
