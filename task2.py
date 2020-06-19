@@ -1,23 +1,29 @@
+#!/bin/python3
 import re
 
 if __name__ == '__main__':
+    # This is my answer of the task 2 in the AMP Code Question. 
+    # Please run this program by the following command:
+    # python task2.py
+    
     # Enter the values of N and M, respectively
-    DIM = input('Please enter the values of N and M: ').strip().split()
-    N, M = int(DIM[0]), int(DIM[1])
+    first_multiple_input = input('Please enter the values of N and M: ').rstrip().split() 
+    N = int(first_multiple_input[0])
+    M = int(first_multiple_input[1])
 
     # Initialize the input matrix
     matrix = []
 
     for row in range(N):
-        matrix.append(input('Please enter the items in No. {row} row: '
-                            .format(row = row + 1)))
+        matrix_item = input('Please enter the items in No. {row} row: '
+                            .format(row = row + 1))
+        matrix.append(matrix_item)
 
-    # decode the matrix script as output
+    # Decode the matrix script as output
     output = "".join([row[item] for item in range(M) for row in matrix])
-
-    print('The decoded script is: {output}'.format(output = output))
 
     output = re.sub(r'\b[^a-zA-Z0-9]+\b', ' ', output)
     output = re.sub('  ', ' ', output)
-
-    print('The final decoded script is: {output}'.format(output = output))
+    
+    # Print the output of this program
+    print(output)
